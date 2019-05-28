@@ -236,7 +236,7 @@ const createTextGradientClass = (
   );
 
   const RNVirtualTextGradient =
-    UIManager.getViewManagerConfig(uiVirtualViewClassName) == null
+    UIManager[uiVirtualViewClassName] == null
       ? RNTextGradient
       : createReactNativeComponentClass(uiVirtualViewClassName, () => ({
           validAttributes: {
