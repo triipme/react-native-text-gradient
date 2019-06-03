@@ -205,8 +205,7 @@ public abstract class RNShadowTextGradient extends ReactTextShadowNode {
               that.getPadding(Spacing.END),
               that.getPadding(Spacing.BOTTOM),
               (int) ReflectUtils.invokeMethod(that, "getTextAlign", ReactTextShadowNode.class),
-              that.mTextBreakStrategy,
-              that.mJustificationMode
+              that.mTextBreakStrategy
             );
 
             view.setText(textUpdate);
@@ -233,8 +232,7 @@ public abstract class RNShadowTextGradient extends ReactTextShadowNode {
                       "getTextAlign",
                       ReactTextShadowNode.class
                     ),
-                    that.mTextBreakStrategy,
-                    that.mJustificationMode
+                    that.mTextBreakStrategy
                   );
 
                   view.setText(textUpdate);
